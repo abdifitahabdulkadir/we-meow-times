@@ -1,4 +1,4 @@
-import { crimsonFont } from "@/lib/constants";
+import { ChomskyFont, crimsonFont, helveticaFont } from "@/lib/constants";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${crimsonFont.className} text-gray-900 antialiased`}>
+      <body
+        className={`${crimsonFont.className} ${helveticaFont.variable} ${ChomskyFont.variable} text-gray-900 antialiased`}
+      >
         {children}
       </body>
     </html>

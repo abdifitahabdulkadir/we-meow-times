@@ -12,7 +12,7 @@ export default function MarketItem({
 }: Props) {
   return (
     <div
-      className={`marketDropShadow grid grid-cols-2 rounded-[4px] bg-white p-[12px] pb-[9px]`}
+      className={`marketDropShadow apply-helvetica grid grid-cols-2 rounded-[4px] bg-white p-[12px] pb-[9px]`}
     >
       <div className="flex flex-col items-start gap-[4px]">
         <p className="text-[1.5rem] leading-[24px] font-bold">{tickerSymbol}</p>

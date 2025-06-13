@@ -45,3 +45,12 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
   gap: 32px;
 }
+
+/* very handly font family utitlies as this application is using three fonts. */
+@utility apply-chomsky {
+  font-family: var(--chomsky);
+}
+
+@utility apply-helvetica {
+  font-family: var(--helvetica);
+}

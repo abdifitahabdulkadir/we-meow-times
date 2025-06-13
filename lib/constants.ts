@@ -1,27 +1,9 @@
+import { Crimson_Text } from "next/font/google";
 import localFont from "next/font/local";
 
 // loading fonts local for better optimization, and quick availability
-export const chomskyFont = localFont({
-  src: "../fonts/chomsky.woff2",
-});
-
-export const crimsonFont = localFont({
-  src: [
-    {
-      path: "../fonts/crimson-pro-italic.woff2",
-      style: "italic",
-      weight: "400",
-    },
-    {
-      path: "../fonts/crimson-pro.woff2",
-      style: "normal",
-      weight: "400",
-    },
-  ],
-  display: "fallback",
-});
-
 export const helveticaFont = localFont({
+  variable: "--helvetica",
   src: [
     {
       path: "../fonts/Helvetica.ttf",
@@ -59,9 +41,22 @@ export const helveticaFont = localFont({
       weight: "700",
     },
   ],
-  display: "swap",
+  display: "fallback",
+});
+export const ChomskyFont = localFont({
+  variable: "--chomsky",
+  src: "../fonts/Chomsky.otf",
+  display: "fallback",
+  style: "normal",
+});
+export const crimsonFont = Crimson_Text({
+  weight: ["400", "600", "700"],
+  subsets: ["latin"],
+  style: ["italic", "normal"],
+  display: "fallback",
 });
 
+/**stories */
 export const MAIN_STORY = {
   id: "a",
   title: "Study: Video games improve reflexes and critical thinking",

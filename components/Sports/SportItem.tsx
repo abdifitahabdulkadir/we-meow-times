@@ -1,4 +1,3 @@
-import { crimsonFont } from "@/lib/constants";
 import Image from "next/image";
 
 interface Props {
@@ -19,11 +18,7 @@ export default function SportItem({ image, title }: Props) {
         height={100}
         className="h-[132px] w-full rounded-[4px] object-cover"
       />
-      <p
-        className={`${crimsonFont.className} text-[1.125rem] leading-[25px] font-bold`}
-      >
-        {title}
-      </p>
+      <p className={`text-[1.125rem] leading-[25px] font-bold`}>{title}</p>
     </div>
   );
 }

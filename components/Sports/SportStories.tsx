@@ -1,12 +1,10 @@
-import { helveticaFont, SPORTS_STORIES } from "@/lib/constants";
+import { SPORTS_STORIES } from "@/lib/constants";
 import StoryHeader from "../Header/StoryHeader";
 import SportItem from "./SportItem";
 
 export default function SportStories() {
   return (
-    <section
-      className={`flex w-full flex-col gap-[16px] ${helveticaFont.className}`}
-    >
+    <section className={`flex w-full flex-col gap-[16px]`}>
       <StoryHeader topic="Sports" text="Visit Sports page" />
       <div className="responsiveGrid1">
         {SPORTS_STORIES.map((sportStory) => {

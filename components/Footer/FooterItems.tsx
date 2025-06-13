@@ -1,4 +1,3 @@
-import { helveticaFont } from "@/lib/constants";
 import Link from "next/link";
 
 interface Props {
@@ -8,9 +7,7 @@ interface Props {
 
 export default function FooterItems({ title, links }: Props) {
   return (
-    <div
-      className={`flex flex-col gap-[8px] text-white ${helveticaFont.className}`}
-    >
+    <div className="flex flex-col gap-[8px] text-white">
       <h2 className="text-[1.125rem] leading-[100%] font-bold text-gray-300">
         {title}
       </h2>
