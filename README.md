@@ -18,6 +18,11 @@ Experience modern news delivery at its finest.
 - Node.js 18+
 - Bun (recommended) or npm
 
+### 🎨 Design
+
+View the Figma design:
+[We Meow Times Design](https://www.figma.com/design/93hduRTUfM6P5f3MsrRvYL/We-Meow-Times?node-id=0-1&p=f&t=EXvWoV8NXifeliVZ-0)
+
 ### Installation
 
 1. Clone the repository:
