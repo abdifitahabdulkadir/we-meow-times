@@ -5,7 +5,7 @@ import SportItem from "./SportItem";
 export default function SportStories() {
   return (
     <section
-      className={`order-6 flex w-full flex-col gap-[16px] md:col-span-full`}
+      className={`min-lg:border-left flex w-full flex-col gap-[16px] min-lg:w-1/2`}
     >
       <StoryHeader topic="Sports" text="Visit Sports page" />
       <div className="footballStoriesGrid">

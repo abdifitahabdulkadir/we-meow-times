@@ -5,7 +5,7 @@ import MarketItem from "./MarketItem";
 export default function MarketStories() {
   return (
     <section
-      className={`order-5 flex flex-col gap-[20px] font-normal md:col-span-full`}
+      className={`flex w-full flex-col gap-[20px] font-normal min-lg:w-1/2`}
     >
       <StoryHeader topic="Market" text="Visit Market Area" />
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   id: string;
@@ -10,7 +11,10 @@ interface Props {
 }
 export default function SportItem({ image, title }: Props) {
   return (
-    <div className="flex w-full min-w-[165px] flex-col gap-[8px]">
+    <Link
+      href={"#"}
+      className="group flex w-full min-w-[165px] flex-col gap-[8px]"
+    >
       <Image
         src={image.src}
         alt={image.alt}
@@ -18,7 +22,11 @@ export default function SportItem({ image, title }: Props) {
         height={100}
         className="h-[132px] w-full rounded-[4px] object-cover"
       />
-      <p className={`text-[1.125rem] leading-[25px] font-bold`}>{title}</p>
-    </div>
+      <p
+        className={`group-hover:text-secondary text-[1.125rem] leading-[25px] font-bold`}
+      >
+        {title}
+      </p>
+    </Link>
   );
 }

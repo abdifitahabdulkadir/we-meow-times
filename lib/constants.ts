@@ -81,7 +81,7 @@ export const SECONDARY_STORIES = [
     id: "b",
     title: "Politicians scramble as court overrules invalid legislation",
     image: {
-      src: "/images/politicians.jpg",
+      src: "/images/politicitions.png",
       alt: "Lots of white men in suits listen apathetically to a presentation",
     },
     abstract: `In a surprising judgment that surprised no one, the New Amsterdam court of appeals finds Bill 234 unconstitutional, overturning one of the Modern Sovereign party's core legislative achievements. Now, lawmakers are working furiously to rewrite the law before the Royal Ascent next month.`,
@@ -90,7 +90,7 @@ export const SECONDARY_STORIES = [
     id: "c",
     title: "Vintage cars fetch a premium as car industry shifts gears",
     image: {
-      src: "/images/old-car.jpg",
+      src: "/images/old-car.png",
       alt: "A vintage old Beetle (car), orange and with signs of wear",
     },
     abstract: `In a Landsdowne auction, a vintage 1900s beetle sold “as-is” for ȿ120,000, shattering expectations and records alike. As the automotive industry focuses on ALVs (Autonomous Levitated Vehicles), some enthusiasts are paying big bucks for a more traditional driving experience.`,
@@ -100,7 +100,7 @@ export const SECONDARY_STORIES = [
     title:
       "This season’s hottest fashions unveiled amidst designer controversy",
     image: {
-      src: "/images/fashion.jpg",
+      src: "/images/fashion.png",
       alt: "A stylish woman carries a dozen shopping bags",
     },
     abstract: `Ludish Atvalatashia was in his 50s when he launched his first couture line. Famously, he worked as an engineer for Blue Rocket, and learned that many of his inventions were quite eye-catching on the runway. This week, though, whistleblowers from within his agency have revealed the toxic nature of their work environment.`,
@@ -171,7 +171,7 @@ export const SPORTS_STORIES = [
   {
     id: "s-a",
     image: {
-      src: "/images/habs.jpg",
+      src: "/images/hubs.png",
       alt: "Montreal Canadiens goalie Carey Price covering his net",
     },
     title: "Montreal Canadiens hope to settle the score in Vegas",
@@ -179,7 +179,7 @@ export const SPORTS_STORIES = [
   {
     id: "s-b",
     image: {
-      src: "/images/bicycles.jpg",
+      src: "/images/bicycles.png",
       alt: "Lots of men in cute matching outfits riding bicycles",
     },
     title: "In surprise move, the Tour de France moves to Belgium",
@@ -187,7 +187,7 @@ export const SPORTS_STORIES = [
   {
     id: "s-c",
     image: {
-      src: "/images/football.jpg",
+      src: "/images/football.png",
       alt: "A football player runs with the ball, whilst being chased by another player",
     },
     title: "The Texas Giants eke out a victory after a late-game touchdown",
@@ -195,7 +195,7 @@ export const SPORTS_STORIES = [
   {
     id: "s-d",
     image: {
-      src: "/images/decathlon.jpg",
+      src: "/images/decathlon.png",
       alt: "Women sprinting on a race track",
     },
     title: "The surprising result for this summer decathlon",
@@ -203,7 +203,7 @@ export const SPORTS_STORIES = [
   {
     id: "s-3",
     image: {
-      src: "/images/coach.jpg",
+      src: "/images/coach.png",
       alt: "A soccer coach places pylons on a field",
     },
     title: "Behind the scenes: coaching a Little League team",
