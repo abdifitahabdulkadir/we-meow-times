@@ -3,6 +3,7 @@
 html,
 body {
   height: 100%;
+  border: none;
 }
 
 :root {
@@ -30,20 +31,62 @@ body {
   }
 }
 
+@utility border-left {
+  /* tablet size and up */
+  @media (min-width: 48rem) {
+    border-left: solid 1px var(--color-gray-300);
+    padding-left: 16px;
+    margin-left: 16px;
+  }
+}
 @utility marketDropShadow {
   box-shadow: 2px 4px 12px 0 rgb(0 0 0 / 0.1);
 }
 
-@utility responsiveGrid1 {
+@utility marketStoriesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
   gap: 16px;
 }
 
-@utility responsiveGrid2 {
+@utility footballStoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 16px;
+  width: 100%;
+  @media (min-width: 48rem) {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+}
+
+@utility footerLinksResponsiveGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
   gap: 32px;
+}
+@utility opinionSectionResponsiveGrid {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 48rem) {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+}
+
+@utility opinionItemResponsiveGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 21px;
+  width: 100%;
+
+  @media (min-width: 48rem) {
+    display: flex;
+    flex-direction: column;
+    gap-row: 21px;
+  }
 }
 
 /* very handly font family utitlies as this application is using three fonts. */

@@ -11,7 +11,7 @@ export default function FooterItems({ title, links }: Props) {
       <h2 className="text-[1.125rem] leading-[100%] font-bold text-gray-300">
         {title}
       </h2>
-      <ol className="flex flex-col items-center gap-[6px]">
+      <ol className="flex flex-col items-center gap-[6px] md:items-start">
         {links.map((eachLink) => {
           return <FooterItem key={eachLink} text={eachLink} />;
         })}

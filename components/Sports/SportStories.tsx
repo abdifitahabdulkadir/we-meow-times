@@ -4,9 +4,11 @@ import SportItem from "./SportItem";
 
 export default function SportStories() {
   return (
-    <section className={`flex w-full flex-col gap-[16px]`}>
+    <section
+      className={`order-6 flex w-full flex-col gap-[16px] md:col-span-full`}
+    >
       <StoryHeader topic="Sports" text="Visit Sports page" />
-      <div className="responsiveGrid1">
+      <div className="footballStoriesGrid">
         {SPORTS_STORIES.map((sportStory) => {
           return <SportItem key={sportStory.id} {...sportStory} />;
         })}

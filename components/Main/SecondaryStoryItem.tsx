@@ -11,13 +11,13 @@ interface Props {
 }
 export default function SecondaryStoryItem({ image, title, abstract }: Props) {
   return (
-    <div className="grid w-full grid-cols-[120px_1fr] items-start gap-[16px]">
+    <div className="grid w-full grid-cols-[120px_1fr] items-start gap-[16px] md:grid-cols-1">
       <Image
         src={image.src}
         alt={image.alt}
         width={100}
         height={100}
-        className="aspect-square size-[120px] rounded-[4px] object-cover"
+        className="aspect-square size-[120px] w-full rounded-[4px] object-cover"
       />
       <div>
         <h1 className="text-[1.125rem] leading-[25px] font-bold">{title}</h1>

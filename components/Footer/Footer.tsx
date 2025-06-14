@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="apply-helvetica mt-[48px] bg-gray-900">
       <TopFooterLinks />
-      <div className="responsiveGrid2 mt-[32px] w-full justify-items-center p-[16px]">
+      <div className="footerLinksResponsiveGrid mt-[32px] w-full justify-items-center p-[16px] md:justify-items-start">
         {FOOTER_LINKS.map((footerLink, index) => {
           return <FooterItems key={index} {...footerLink} />;
         })}

@@ -10,7 +10,7 @@ interface Props {
 }
 export default function SportItem({ image, title }: Props) {
   return (
-    <div className="flex w-full flex-col gap-[8px]">
+    <div className="flex w-full min-w-[165px] flex-col gap-[8px]">
       <Image
         src={image.src}
         alt={image.alt}

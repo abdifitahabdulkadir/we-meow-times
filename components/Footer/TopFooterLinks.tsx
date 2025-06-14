@@ -7,7 +7,7 @@ interface Props {
 export default function TopFooterLinks() {
   return (
     <nav
-      className={`flex flex-col items-center gap-[16px] border-b border-gray-700 p-[16px] pb-[24px] text-gray-300`}
+      className={`flex flex-col items-center gap-[16px] border-b border-gray-700 p-[16px] pb-[24px] text-gray-300 md:flex-row md:justify-center`}
     >
       <ol className="flex items-baseline gap-x-[20px]">
         <TopFooterItem text="About us " />

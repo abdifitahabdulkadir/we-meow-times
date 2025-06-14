@@ -9,8 +9,8 @@ interface Props {
 }
 export default function OpinionItem({ author, avatar, title }: Props) {
   return (
-    <article className="grid w-full grid-cols-[2fr_1fr] gap-x-[21px]">
-      <div>
+    <article className="opinionItemResponsiveGrid">
+      <div className="md:order-2">
         <h2 className="text-[1.125rem] leading-[24px] font-semibold text-gray-700">
           {author}
         </h2>
@@ -26,7 +26,7 @@ export default function OpinionItem({ author, avatar, title }: Props) {
         alt={`${author}'s profile picture`}
         width={200}
         height={200}
-        className="size-[48px] justify-self-end rounded-full"
+        className="size-[48px] justify-self-end rounded-full md:order-1"
       />
     </article>
   );
